@@ -403,7 +403,7 @@ a {
     #nav-part1 {
         width: 100%;
         position: fixed;
-        background-color:#5c5656;
+        background-color:#292828;
         padding: 25px;
         text-align: center;
         font-size: 50px;
@@ -421,7 +421,7 @@ a {
         bottom: 0;
         overflow: scroll;
         transition: all 0.3s ease-out;
-        background-color: #5c5656;
+        background-color: #292828;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -448,7 +448,8 @@ a {
     }
 
     #sub-sec #sub-part-1{
-        padding: 100px 20px;
+        /* padding: 100px 1px; */
+        padding: 100px calc(3px);
     }
 
     
