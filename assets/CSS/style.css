@@ -416,6 +416,7 @@ color: #12F7D6;
         justify-content: center;
     }
 
+
     #sub-sec{
         display: flex;
         flex-direction: column;
@@ -431,6 +432,15 @@ color: #12F7D6;
         justify-content: center;
     }
 
+    #sub-part-1 >#cv-button{
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 40px;
+        font-size: 30px;
+    }
+    
 
 }
 
