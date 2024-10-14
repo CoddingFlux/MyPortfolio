@@ -1,0 +1,35 @@
+
+/* CSS Variable */
+
+:root {
+    color: #ecf0f8;
+    --bg-color: #292F36;
+    --icon-txt-color: #12F7D6;
+    --white-color: #ffff;
+    --balck-color: #000000;
+    --cv-bg-color: var(--white-color);
+    --cv-text-color: var(--balck-color);
+    --talk-color: #43454D;
+    --font-IMFELL: "IM Fell Great Primer SC", serif;
+    --font-NOTOSANS: "Noto Sans", sans-serif;
+    --font-PACIFICO: "Pacifico", cursive;
+    --font-JOSEFINSANS: "Josefin Sans", sans-serif;
+}
+
+.light_mode {
+    --bg-color: #ffffff;
+    /* --icon-txt-color: #427dfd; */
+    --icon-txt-color: #0051ff;
+    --white-color: #000000;
+    --balck-color: #ffffff;
+    --cv-bg-color: #0051ff;
+    --cv-text-color: var(--balck-color);
+    /* --cv-icon-color:; */
+    --talk-color: #43454D;
+    --font-IMFELL: "IM Fell Great Primer SC", serif;
+    --font-NOTOSANS: "Noto Sans", sans-serif;
+    --font-PACIFICO: "Pacifico", cursive;
+    --font-JOSEFINSANS: "Josefin Sans", sans-serif;
+}
+
+/* /CSS Variable */

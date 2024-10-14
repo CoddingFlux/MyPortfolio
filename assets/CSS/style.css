@@ -5,6 +5,8 @@
 * Browsers: last 4 version
 */
 
+@import url('variable.css');
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -26,42 +28,6 @@ body {
     height: 100%;
 }
 
-/* CSS Variable */
-
-
-
-:root {
-    color: #ecf0f8;
-    --bg-color: #292F36;
-    --icon-txt-color: #12F7D6;
-    --white-color: #ffff;
-    --balck-color: #000000;
-    --cv-bg-color: var(--white-color);
-    --cv-text-color: var(--balck-color);
-    --talk-color: #43454D;
-    --font-IMFELL: "IM Fell Great Primer SC", serif;
-    --font-NOTOSANS: "Noto Sans", sans-serif;
-    --font-PACIFICO: "Pacifico", cursive;
-    --font-JOSEFINSANS: "Josefin Sans", sans-serif;
-}
-
-.light_mode {
-    --bg-color: #ffffff;
-    /* --icon-txt-color: #427dfd; */
-    --icon-txt-color: #0051ff;
-    --white-color: #000000;
-    --balck-color: #ffffff;
-    --cv-bg-color: #0051ff;
-    --cv-text-color: var(--balck-color);
-    /* --cv-icon-color:; */
-    --talk-color: #43454D;
-    --font-IMFELL: "IM Fell Great Primer SC", serif;
-    --font-NOTOSANS: "Noto Sans", sans-serif;
-    --font-PACIFICO: "Pacifico", cursive;
-    --font-JOSEFINSANS: "Josefin Sans", sans-serif;
-}
-
-/* /CSS Variable */
 
 /* Display attribute classes */
 
@@ -264,7 +230,12 @@ body {
     }
 }
 
-.m-body .nav-top .nav-part-2 i {
+
+.m-body .nav-top .nav-part-2 a {
+text-decoration: none;
+}
+
+.m-body .nav-top .nav-part-2  i {
     font-size: 1.3em;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -564,6 +535,7 @@ body {
         height: 150px;
         width: 150px;
         border-radius: 50%;
+        border: 4px dotted var(--cv-bg-color);
 
         /* filter:drop-shadow(rgb(255, 255, 255) 0px 5px 15px); */
         -webkit-box-shadow: rgba(0, 0, 0, 0.145) 0px 14px 28px, rgba(0, 0, 0, 0.088) 0px 10px 10px;

@@ -1,3 +1,11 @@
+@import url('variable.css');
+
+.m-body .main-content{
+    font-family: var(--font-JOSEFINSANS);
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
 .m-body .main-content .aboutme{ 
     height: 100vh;
     background-image: url("../image/img/About_me.png");
@@ -7,11 +15,40 @@
     padding: 100px;
 }
 
-
 .m-body .main-content .aboutme .abouinfo{
     margin-right: 30px;
-    background-color: black;
+    /* background-color: black; */
     text-align: justify;
-    padding: 0 16px;
+    padding: 0 40px;
 }
+
+.m-body .main-content .aboutme .abouinfo .abouheading h2{
+    margin-bottom: 30px;
+    border: 2px solid var(--icon-txt-color);
+    width:max-content;
+    padding:5px 10px;
+    font-size: 2em;
+    color: var(--cv-bg-color);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.m-body .main-content .aboutme .abouinfo .aboudetail{
+line-height: 30px;
+word-spacing: 5px;
+color: var(--white-color);
+
+    & span{
+        color:var(--icon-txt-color);
+    }
+
+    & .hello{
+        font-size: 2em;
+    }
+
+    & em{
+        color: var(--icon-txt-color);
+    }
+}
+
 
