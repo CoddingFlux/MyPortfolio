@@ -1,0 +1,17 @@
+.m-body .main-content .aboutme{ 
+    height: 100vh;
+    background-image: url("../image/img/About_me.png");
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+
+.m-body .main-content .aboutme .abouinfo{
+    margin-right: 30px;
+    background-color: black;
+    text-align: justify;
+    padding: 0 16px;
+}
+

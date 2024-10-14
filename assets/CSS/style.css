@@ -644,13 +644,4 @@ body {
     }
 }
 
-
-.m-body .main-content {
-    height: 100vh;
-    background-image: url("../image/img/About_me.png");
-    background-size: cover;
-}
-
-
-
 /* /Main Body Content */
