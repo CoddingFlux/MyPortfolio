@@ -66,6 +66,7 @@ body {
 
 .nav .border-right {
     position: absolute;
+    margin-top: 40px;
     right: 0;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -92,7 +93,8 @@ body {
         width: fit-content;
         border-radius: 50px;
         padding: 0 8px;
-        margin: 6vh auto 10px auto;
+        margin-top:50px;
+        
     }
 
     & a {
@@ -147,7 +149,7 @@ body {
 
 
 .nav ul {
-    margin-top: 50px;
+margin: auto auto;
 }
 
 .nav ul li {
@@ -162,7 +164,7 @@ body {
         -ms-flex-pack: start;
             justify-content: start;
     list-style: none;
-    padding: 30px 0px;
+    margin-bottom: 40px;
     font-size: 1.3em;
 
     overflow: hidden;
@@ -423,8 +425,11 @@ text-decoration: none;
 
     }
 
+    & a{
+        text-decoration: none;
+    }
+
     & i {
-        /* border: 2px solid red; */
         color: #12d5f7;
         border-radius: 50px;
         padding: 5px;

@@ -2,7 +2,7 @@
 
 .m-body .main-content{
     font-family: var(--font-JOSEFINSANS);
-    font-weight: 300;
+    font-weight: 300;  
     font-size: 1.2em;
 }
 
@@ -34,6 +34,10 @@
 }
 
 .m-body .main-content .aboutme .abouinfo .aboudetail{
+    overflow: auto;
+}
+
+.m-body .main-content .aboutme .abouinfo .aboudetail p{
 line-height: 30px;
 word-spacing: 5px;
 color: var(--white-color);
@@ -49,6 +53,10 @@ color: var(--white-color);
     & em{
         color: var(--icon-txt-color);
     }
+}
+
+@media only screen and (max-width:767px){
+
 }
 
 

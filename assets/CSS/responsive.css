@@ -1,0 +1,178 @@
+@media only screen and (max-width:767px) {
+
+    body {
+        flex-direction: column-reverse;
+    }
+
+    .nav {
+        height: 14%;
+        width: 100vw !important;
+        justify-content: center;
+        transition: unset;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .nav .border-right {
+        width: 90%;
+        height: 3px;
+        top: 0px;
+        left: 50%;
+        margin-top: unset;
+    }
+
+    .nav .nav-logo {
+        display: none;
+    }
+
+
+    .nav ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+
+    }
+
+    .nav ul li {
+        margin-bottom: unset;
+    }
+
+    .nav ul li a span {
+        display: contents;
+        position: relative;
+        overflow: hidden;
+        color: var(--white-color);
+
+        &:hover {
+            font-weight: unset;
+        }
+    }
+
+    .nav:hover ul li a span {
+        display: unset;
+        position: relative;
+        overflow: hidden;
+        color: var(--white-color);
+
+        &:hover {
+            font-weight: 900;
+        }
+    }
+
+    .nav:hover ul li a:active {
+        background-color: black;
+    }
+
+
+    .nav ul li a span {
+        font-size: 1.1rem;
+    }
+
+    .nav ul li a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .m-body .header .head-content {
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 12px 50px 12px;
+        height: 1000px;
+    }
+
+    .m-body .header {
+        height: 1300px
+    }
+
+    .m-body .header .head-content .head-card {
+        height: 2500px;
+    }
+
+
+
+    .m-body .header .head-content .head-card .head-part-1 {
+        height: 100%;
+    }
+
+
+    .m-body .header .head-content .head-card .head-part-1 .head-title {
+
+
+        padding-top: 70px;
+
+        & h3 {
+            font-size: 1.2em;
+
+            & em {
+                font-size: 1.4rem;
+            }
+        }
+
+        & h2 {
+            font-size: 1.2em;
+        }
+
+        & p {
+            font-size: 0.6em;
+        }
+    }
+
+    .m-body .header .head-content .head-card .head-part-1 .head-title .open-tag>h1 {
+        font-size: 1.5em;
+        padding-left: 47px;
+    }
+
+    .m-body .header .head-content .head-card .head-part-1 .head-title .open-tag,
+    .close-tag {
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .m-body .header .head-content .head-card .head-part-1 .head-para p {
+        padding: 5px 0px 5px 50px;
+        font-size: 0.7em;
+    }
+
+    .m-body .header .head-content .head-card .head-part-1 .head-para .open-tag-1,
+    .close-tag-1 {
+        font-size: 0.7em;
+        padding-left: 10px;
+    }
+
+    .m-body .header .head-content .head-card-2 {
+        margin-top: 10px;
+        height: 2000px;
+        width: 340px;
+    }
+
+
+    .m-body .main-content .aboutme {
+        flex-direction: column-reverse;
+        height: 1300px;
+        justify-content: space-between;
+    }
+
+    .m-body .main-content .aboutme .abouimg img {
+        height: 40vh;
+        width: 80vw;
+    }
+
+
+    .m-body .main-content .aboutme .abouinfo{
+        margin-right: unset;
+        /* background-color: black; */
+        text-align: justify;
+        padding: unset;
+        width: 80vw;
+    }
+
+
+
+}
