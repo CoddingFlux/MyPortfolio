@@ -1,62 +1,186 @@
 @import url('variable.css');
 
-.m-body .main-content{
+.m-body .main-content {
     font-family: var(--font-JOSEFINSANS);
-    font-weight: 300;  
+    font-weight: 300;
     font-size: 1.2em;
 }
 
-.m-body .main-content .aboutme{ 
+.m-body .main-content .aboutme {
     height: 100vh;
-    background-image: url("../image/img/About_me.png");
+    background-image: url("../image/img/About_me1.jpg");
     background-size: cover;
     align-items: center;
     justify-content: space-around;
     padding: 100px;
+    position: relative;
 }
 
-.m-body .main-content .aboutme .abouinfo{
+.m-body .main-content .aboutme .abouinfo {
     margin-right: 30px;
     /* background-color: black; */
     text-align: justify;
     padding: 0 40px;
 }
 
-.m-body .main-content .aboutme .abouinfo .abouheading h2{
+.m-body .main-content .aboutme .abouinfo .abouheading h2 {
     margin-bottom: 30px;
     border: 2px solid var(--icon-txt-color);
-    width:max-content;
-    padding:5px 10px;
+    width: max-content;
+    padding: 5px 10px;
     font-size: 2em;
     color: var(--cv-bg-color);
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-.m-body .main-content .aboutme .abouinfo .aboudetail{
+.m-body .main-content .aboutme .abouinfo .aboudetail {
     overflow: auto;
 }
 
-.m-body .main-content .aboutme .abouinfo .aboudetail p{
-line-height: 30px;
-word-spacing: 5px;
-color: var(--white-color);
+.m-body .main-content .aboutme .abouinfo .aboudetail p {
+    line-height: 30px;
+    word-spacing: 5px;
+    color: var(--white-color);
 
-    & span{
-        color:var(--icon-txt-color);
+    & span {
+        color: var(--icon-txt-color);
     }
 
-    & .hello{
+    & .hello {
         font-size: 2em;
     }
 
-    & em{
+    & em {
         color: var(--icon-txt-color);
     }
 }
 
-@media only screen and (max-width:767px){
+.m-body .main-content .aboutme .abouimg {
+transform: scale(0.9,0.9);
+transition: all 0.4s ease-in-out;
+}
 
+.m-body .main-content .aboutme  .abouimg:hover{
+    transform: scale(1,1);
 }
 
 
+
+.m-body .main-content .skills {
+    height: 100vh;
+    background-image: url("../image/img/Skills.jpg");
+    background-size: cover;
+}
+
+.m-body .main-content .skills .headingskills {
+    text-align: center;
+    padding-top: 150px;
+    line-height: 40px;
+    position: relative;
+}
+
+.m-body .main-content .skills .headingskills h3 {
+    color: var(--icon-txt-color);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.m-body .main-content .skills .headingskills p {
+    color: var( --white-color);
+}
+
+.m-body .main-content .skills .headingskills::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid var(--icon-txt-color);
+    top: 20px;
+    left: 0;
+}
+
+.m-body .main-content .skills .card {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+
+}
+
+.m-body .main-content .skills .card
+.card1 {
+    padding: 60px 50px;
+    background-color: var(--icon-txt-color);
+    color: var(--balck-color);
+    border-radius: 10px;
+    transition: 0.3s ease ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.m-body .main-content .skills .card
+.card1 i{
+    font-size:1.5rem;   
+}
+
+.card1:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+.card:hover .card1:not(:hover) {
+    filter: blur(3px);
+    transform: scale(0.9,0.9);
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+  }
+  .popup h2 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .popup .img-container img{
+    margin: 10px 10px;
+   height: 60px;
+   width: 70px;
+  }
+  .popup button {
+    padding: 10px 20px;
+    border: none;
+    background: #007BFF;
+    color: rgb(26, 22, 22);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 2s;
+  }
+  .popup button:hover {
+    background: #0056b3;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    z-index: 99;
+  }
