@@ -162,8 +162,8 @@ transition: all 0.4s ease-in-out;
   }
   .popup .img-container img{
     margin: auto 2px;
-   height: 60px;
-   width: 70px;
+   height: 50px;
+   width: 60px;
   }
   .popup button {
     padding: 10px 20px;
