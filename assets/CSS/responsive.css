@@ -156,13 +156,14 @@
 
     .m-body .main-content .aboutme {
         flex-direction: column-reverse;
-        height: 1500px;
-        justify-content: space-between;
+        height: 1200px;
+        justify-content: space-around;
     }
 
     .m-body .main-content .aboutme .abouimg img {
         height: 40vh;
         width: 80vw;
+        margin: -100px;
     }
 
 

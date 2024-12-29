@@ -25,6 +25,7 @@
 
 .m-body .main-content .aboutme .abouinfo .abouheading h2 {
     margin-bottom: 30px;
+    margin-top:120px ;
     border: 2px solid var(--icon-txt-color);
     width: max-content;
     padding: 5px 10px;
@@ -36,6 +37,8 @@
 
 .m-body .main-content .aboutme .abouinfo .aboudetail {
     overflow: auto;
+    height: 600px;
+    padding: 10px;
 }
 
 .m-body .main-content .aboutme .abouinfo .aboudetail p {
@@ -157,7 +160,7 @@ transition: all 0.4s ease-in-out;
     margin-bottom: 10px;
   }
   .popup .img-container img{
-    margin: 10px 10px;
+    margin: auto 10px;
    height: 60px;
    width: 70px;
   }
